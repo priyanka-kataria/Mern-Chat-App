@@ -1,4 +1,4 @@
-MONGODB_URI="mongodb+srv://priyankaiitd22:K7jnWMDq69Lrw5kG@cluster0.je2xg.mongodb.net/";
+MONGODB_URI="";
 const mongoose= require("mongoose");
 
 const connectDB= async()=>{
