@@ -1,0 +1,115 @@
+.personal-chat-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* Fill the parent container */
+    width: 100%; /* Ensure full width within box2 */
+    background-color: #c0e8f0; /* Match the box2 background */
+    padding: 10px; /* Add spacing inside the component */
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .personal-chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ccc;
+    border-radius: 5px 5px 0 0;
+  }
+  
+  .personal-chat-header .chat-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .personal-chat-messages {
+    flex: 1; /* Allow messages to grow and shrink */
+    padding: 15px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column-reverse; /* New messages appear at the bottom */
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .personal-chat-footer {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+  }
+  
+  .personal-chat-input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .personal-chat-send-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .personal-chat-send-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 720px) {
+    .personal-chat-container {
+      height: 100vh; /* Ensure full height on smaller screens */
+    }
+  
+    .personal-chat-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .personal-chat-footer {
+      flex-direction: column;
+    }
+  
+    .personal-chat-input {
+      margin-bottom: 10px;
+      width: 100%;
+    }
+  
+    .personal-chat-send-button {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
+  .back-button {
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    color: #007bff;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .back-button:hover {
+    color: #0056b3;
+  }
+  
+  @media (min-width: 721px) {
+    .back-button {
+      display: none;
+    }
+  }
+  

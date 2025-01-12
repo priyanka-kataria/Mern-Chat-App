@@ -1,0 +1,79 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    border: 1px solid #898484;
+    border-radius: 5px;
+    color: black;
+  }
+  
+  .search-results,
+  .selected-users {
+    margin-bottom: 15px;
+    max-height: 150px;
+    overflow-y: auto;
+  }
+  
+  .search-item,
+  .selected-item {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  
+  .remove-user {
+    color: red;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .modal-actions {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .create-button,
+  .cancel-button {
+    padding: 10px 15px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .create-button {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .cancel-button {
+    background-color: #ccc;
+    color: black;
+  }
+  
